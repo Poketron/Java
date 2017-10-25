@@ -1,0 +1,121 @@
+package kontenery;
+
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.LinkedList;
+import java.util.Set;
+import java.util.HashMap;
+public class main {
+
+	public static void main(String[] args) 
+	{
+		
+		
+		
+	
+
+		//lista java.util.LinkedList   java.util.List;
+		
+		List<String> Nazwa_listy = new LinkedList<>();	//LISTY Linked gdy czesto usuwasz   array gdy losowe elementy	
+	
+		Nazwa_listy.add("Karol");
+		Nazwa_listy.add("Maciek");
+		Nazwa_listy.add("Zbyszek");
+		Nazwa_listy.add("Michal");
+		
+		for(String item : Nazwa_listy)
+		{
+			System.out.println(item);		//foreach
+		}
+		
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		
+		
+		for(int index=0;index<Nazwa_listy.size();index++)
+		{
+			System.out.println(Nazwa_listy.get(index));				//for
+		}
+		
+		
+		
+		//Zbiory java.util.Set   java.util.HashSet;
+		
+		Set<String> Zbior= new HashSet<>();
+		
+		Zbior.add("jeden");
+		Zbior.add("dwa");
+		Zbior.add("trzy");
+		
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		
+		for(String item : Zbior)
+		{
+			System.out.println(item);		//foreach
+		}
+		
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		
+		
+		//Mapa java.util.HashMap java.util.Map;
+		Map<String, String> Mapa_Moja = new HashMap<>();
+		Mapa_Moja.put("Karoll", "Judasz");
+		Mapa_Moja.put("Kleofas", "Draco");
+		
+		
+		for(String value : Mapa_Moja.values())
+		{
+			System.out.println(value);					//foreach po wartosciach
+		}
+		
+		
+		
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		
+		
+		
+		for(String key : Mapa_Moja.keySet())			//iterowanie po kluczach
+		{	
+			
+			String value = Mapa_Moja.get(key);
+			System.out.println(key + ": "+value);
+		}
+		
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		
+		
+		
+		for(Map.Entry<String,String> entry : Mapa_Moja.entrySet())			//iterowanie po kluczach i wartosciach
+		{
+			
+			String key=entry.getKey();
+			String value=entry.getValue();
+			System.out.println(key + ": "+value);
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+
+
+}
